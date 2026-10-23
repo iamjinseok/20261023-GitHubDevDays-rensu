@@ -1,37 +1,37 @@
-# <!-- Provide a concise, descriptive title for the issue -->
+# <!-- 이슈에 대한 간결하고 설명적인 제목을 작성하세요 -->
 
-## Summary
+## 요약
 
-<!-- Provide a clear, one-sentence description of the request or issue. -->
+<!-- 요청 또는 이슈를 한 문장으로 명확하게 설명하세요. -->
 
-## Context
+## 맥락
 
-<!-- Explain why this change is needed. Include:
-- The problem being solved
-- Any relevant background information
-- Link to related issues or discussions if applicable
+<!-- 이 변경이 왜 필요한지 설명하세요. 다음을 포함합니다.
+- 해결하려는 문제
+- 관련된 배경 정보
+- 해당되는 경우 관련 이슈나 논의 링크
 -->
 
-## Proposed Solution
+## 제안하는 해결 방법
 
-<!-- Describe the suggested approach. Include:
-- Specific changes to be made
-- Files or areas affected
-- Any alternatives considered
+<!-- 제안하는 접근 방식을 설명하세요. 다음을 포함합니다.
+- 수행할 구체적인 변경
+- 영향을 받는 파일 또는 영역
+- 고려한 대안
 -->
 
-## Acceptance Criteria
+## 완료 기준
 
-<!-- List measurable criteria for completion:
-- [ ] Criterion 1
-- [ ] Criterion 2
+<!-- 완료를 판단할 수 있는 측정 가능한 기준을 나열하세요.
+- [ ] 기준 1
+- [ ] 기준 2
 -->
 
-## Additional Information
+## 추가 정보
 
-<!-- Include any of the following if relevant:
-- Error messages or logs
-- Steps to reproduce (for bugs)
-- Dependencies or blockers
-- Impact assessment
+<!-- 해당되는 경우 다음을 포함하세요.
+- 오류 메시지 또는 로그
+- 재현 단계 (버그의 경우)
+- 의존성 또는 차단 요소
+- 영향도 평가
 -->

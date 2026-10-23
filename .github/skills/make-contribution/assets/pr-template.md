@@ -1,36 +1,36 @@
-# <!-- Provide a concise, descriptive title for the pull request -->
+# <!-- 풀 리퀘스트에 대한 간결하고 설명적인 제목을 작성하세요 -->
 
-## Summary
+## 요약
 
-<!-- Provide a three to four sentence description of what this PR accomplishes. -->
+<!-- 이 PR이 무엇을 달성하는지 서너 문장으로 설명하세요. -->
 
-## Background
+## 배경
 
-<!-- Explain why this change is needed. Include:
-- The problem being solved or feature being added
-- Link to related issues (use "Closes #123" to auto-close)
-- Any relevant context or discussions
+<!-- 이 변경이 왜 필요한지 설명하세요. 다음을 포함합니다.
+- 해결하려는 문제 또는 추가하려는 기능
+- 관련 이슈 링크 ("Closes #123"을 사용하면 자동으로 닫힙니다)
+- 관련된 맥락이나 논의
 -->
 
-## Changes
+## 변경 사항
 
-<!-- List the changes being made, logically grouped. Include:
-- Files added, modified, or deleted
-- Key code changes with brief explanations
-- Any architectural or design decisions made
+<!-- 논리적으로 묶어 변경 사항을 나열하세요. 다음을 포함합니다.
+- 추가, 수정, 삭제된 파일
+- 핵심 코드 변경과 간단한 설명
+- 내린 아키텍처 또는 설계 결정
 -->
 
-## Testing
+## 테스트
 
-<!-- Describe how the changes were validated:
-- Commands run (e.g., `npm run build`, `npm run validate`)
-- Manual testing performed
-- Edge cases considered
+<!-- 변경 사항을 어떻게 검증했는지 설명하세요.
+- 실행한 명령 (예: `npm run build`, `npm run validate`)
+- 수행한 수동 테스트
+- 고려한 예외 상황
 -->
 
-## Additional Notes
+## 추가 참고 사항
 
-<!-- Include any of the following if relevant:
-- Breaking changes or migration steps
-- Highlights for human reviewers
+<!-- 해당되는 경우 다음을 포함하세요.
+- 호환성을 깨는 변경 또는 마이그레이션 단계
+- 사람 리뷰어를 위한 강조 사항
 -->
