@@ -6,6 +6,8 @@ import {
     getAllGames,
     getAllGameIds,
     getGameById,
+    getAllCategories,
+    getAllPublishers,
 } from './games';
 
 async function seedGames(db: Database, count: number): Promise<void> {
@@ -62,5 +64,18 @@ describe('games data-access helpers', () => {
     it('returns null for a non-existent game', async () => {
         await seedGames(db, 2);
         expect(await getGameById(db, 99999)).toBeNull();
+    });
+
+    it('returns categories and publishers ordered by name', async () => {
+        await db.insert(categories).values([
+            { name: 'Puzzle', description: 'c' },
+            { name: 'Action', description: 'c' },
+        ]);
+        await db.insert(publishers).values([
+            { name: 'Zeta Games', description: 'p' },
+            { name: 'Alpha Games', description: 'p' },
+        ]);
+        expect((await getAllCategories(db)).map((c) => c.name)).toEqual(['Action', 'Puzzle']);
+        expect((await getAllPublishers(db)).map((p) => p.name)).toEqual(['Alpha Games', 'Zeta Games']);
     });
 });
