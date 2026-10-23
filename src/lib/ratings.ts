@@ -16,6 +16,9 @@ export function clampRating(rating: number): number {
 /**
  * Formats a rating for compact display, e.g. `4.2 / 5`, or `No rating yet`
  * when the rating is `null`.
+ *
+ * @param rating - The star rating, or `null` when the game is not rated.
+ * @returns The display text; ratings are clamped to 0-5 with one decimal.
  */
 export function formatRatingOutOfFive(rating: number | null): string {
     if (rating === null) return 'No rating yet';

@@ -62,7 +62,12 @@ export async function getAllGameIds(db: Database): Promise<number[]> {
     return rows.map((row) => row.id);
 }
 
-/** All categories ordered by name. */
+/**
+ * All categories ordered by name.
+ *
+ * @param db - Injectable database client (real client in pages, in-memory in tests).
+ * @returns Every category, sorted alphabetically by name.
+ */
 export async function getAllCategories(db: Database): Promise<Category[]> {
     return db
         .select({ id: categories.id, name: categories.name })
@@ -70,7 +75,12 @@ export async function getAllCategories(db: Database): Promise<Category[]> {
         .orderBy(asc(categories.name));
 }
 
-/** All publishers ordered by name. */
+/**
+ * All publishers ordered by name.
+ *
+ * @param db - Injectable database client (real client in pages, in-memory in tests).
+ * @returns Every publisher, sorted alphabetically by name.
+ */
 export async function getAllPublishers(db: Database): Promise<Publisher[]> {
     return db
         .select({ id: publishers.id, name: publishers.name })

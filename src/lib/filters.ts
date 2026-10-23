@@ -23,6 +23,10 @@ export interface GameFilterKeys {
 /**
  * True when the keys satisfy the criteria. Categories combine with OR;
  * the category and publisher filters combine with AND.
+ *
+ * @param keys - The category and publisher ids of the game being tested.
+ * @param criteria - The active filter selection.
+ * @returns Whether the game should be shown.
  */
 export function matchesFilters(keys: GameFilterKeys, criteria: GameFilterCriteria): boolean {
     const categoryMatches =
@@ -33,7 +37,13 @@ export function matchesFilters(keys: GameFilterKeys, criteria: GameFilterCriteri
     return categoryMatches && publisherMatches;
 }
 
-/** Games that satisfy the criteria, preserving their original order. */
+/**
+ * Games that satisfy the criteria, preserving their original order.
+ *
+ * @param games - The games to filter.
+ * @param criteria - The active filter selection.
+ * @returns The matching games, in their original order.
+ */
 export function filterGames(games: Game[], criteria: GameFilterCriteria): Game[] {
     return games.filter((game) =>
         matchesFilters(

@@ -3,8 +3,11 @@ import type { Category, Publisher } from '../types/game';
 import Button from './Button.astro';
 
 interface Props {
+    /** Categories shown as multi-select checkboxes. */
     categories: Category[];
+    /** Publishers shown in the single-select dropdown. */
     publishers: Publisher[];
+    /** Total number of games on the page (for the status announcement). */
     total: number;
 }
 
@@ -66,9 +69,19 @@ const { categories, publishers, total } = Astro.props;
         '[data-testid="filter-publisher"]',
     );
 
+    /**
+     * Converts a data attribute or form value to a numeric id.
+     *
+     * @param value - The raw string value, or `undefined`/empty when absent.
+     * @returns The numeric id, or `null` when there is no value.
+     */
     const toId = (value: string | undefined): number | null =>
         value ? Number(value) : null;
 
+    /**
+     * Shows only the cards matching the current form state and updates the
+     * empty state and the screen-reader status message.
+     */
     function applyFilters(): void {
         if (!form || !publisherSelect) return;
 
@@ -99,6 +112,7 @@ const { categories, publishers, total } = Astro.props;
         }
     }
 
+    /** Clears every filter control and re-applies the (now empty) filters. */
     function resetFilters(): void {
         form?.reset();
         applyFilters();
