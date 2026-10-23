@@ -1,76 +1,76 @@
 ---
 name: make-contribution
-description: All changes to code must follow the guidance documented in the repository. Before any issue is filed, branch is made, commits generated, or pull request (or PR) created, a search must be done to ensure the right steps are followed. Whenever asked to create an issue, commit messages, to push code, or create a PR, use this skill so everything is done correctly.
+description: 코드 변경은 모두 리포지토리에 문서화된 지침을 따라야 합니다. 이슈를 등록하거나, 브랜치를 만들거나, 커밋을 생성하거나, 풀 리퀘스트(PR)를 만들기 전에 올바른 절차를 따르는지 먼저 검색해야 합니다. 이슈 생성, 커밋 메시지 작성, 코드 푸시, PR 생성을 요청받을 때마다 이 스킬을 사용하여 모든 작업이 올바르게 이루어지도록 하세요.
 ---
 
-# Contribution guidelines
+# 기여 지침
 
-Most every project has a set of contribution guidelines everyone needs to follow when creating issues, pull requests (PR), or otherwise contributing code. These may include, but are not limited to:
+거의 모든 프로젝트에는 이슈, 풀 리퀘스트(PR)를 만들거나 코드를 기여할 때 모두가 따라야 하는 기여 지침이 있습니다. 여기에는 다음이 포함될 수 있으며 이에 국한되지 않습니다.
 
-- Creating an issue before creating a PR, or creating the two in conjunction
-- Templates for issues or PRs that must be used depending on the change request being made
-- Guidelines on what needs to be documented in those issues and PRs
-- Tests, linters, and other prerequisites that need to be run before pushing any changes
+- PR을 만들기 전에 이슈를 먼저 만들거나, 둘을 함께 만들기
+- 변경 요청의 종류에 따라 반드시 사용해야 하는 템플릿
+- 이슈와 PR에 무엇을 문서화해야 하는지에 대한 지침
+- 변경 사항을 푸시하기 전에 실행해야 하는 테스트, 린터 및 기타 선행 조건
 
-Always remember, you are a guest in someone else's repository. As such, you need to follow the rules and guidelines set forth by the repository owner when contributing code.
+항상 기억하세요. 여러분은 다른 사람의 리포지토리에서는 손님입니다. 따라서 코드를 기여할 때는 리포지토리 소유자가 정한 규칙과 지침을 따라야 합니다.
 
-## Using existing guidelines
+## 기존 지침 사용
 
-Before creating a PR or any of the steps leading up to it, explore the project to determine if there's any guidance. Places to explore include, but are not limited to:
+PR이나 그 이전 단계를 진행하기 전에, 프로젝트를 살펴보고 안내 문서가 있는지 확인하세요. 확인할 위치는 다음을 포함하며 이에 국한되지 않습니다.
 
 - README.md
 - CONTRIBUTING.md
-- Project documentation
-- Issue templates
-- Pull request or PR templates
+- 프로젝트 문서
+- 이슈 템플릿
+- 풀 리퀘스트 또는 PR 템플릿
 
-If any of those exist or you discover documentation elsewhere in the repo, read through what you find, consider it, and follow the guidance to the best of your ability. If you have any questions or confusion, ask the user for input on how best to proceed. DO NOT create a PR until you're certain you've followed the practices.
+이 중 하나라도 있거나 리포지토리의 다른 곳에서 문서를 발견하면, 내용을 읽고 검토한 뒤 최선을 다해 따르세요. 의문이 있거나 헷갈리면 사용자에게 진행 방법을 물어보세요. 관례를 모두 따랐다고 확신하기 전에는 PR을 만들지 **마세요**.
 
-## No guidelines found
+## 지침이 없는 경우
 
-If no guidance is found, or doesn't provide guidance on certain topics, then use the following as a foundation for creating a quality contribution. **ALWAYS** defer to the guidance provided in the repository.
+지침을 찾을 수 없거나 특정 주제에 대한 안내가 없다면, 아래 내용을 양질의 기여를 위한 기본 틀로 사용하세요. **항상** 리포지토리가 제공하는 지침을 우선하세요.
 
-## Tasks
+## 작업
 
-Many repository owners will have guidance on prerequisite steps which need to be completed before a PR is to be created. This can include, but is not limited to:
+많은 리포지토리 소유자는 PR을 만들기 전에 완료해야 하는 선행 작업에 대한 지침을 두고 있습니다. 여기에는 다음이 포함될 수 있으며 이에 국한되지 않습니다.
 
-- building the project or generating assets
-- running linters and ensuring any issues are resolved
-- naming guidelines and other patterns
-- unit tests, end to end tests, or other tests which need to be created and pass
-  - related, there may be required coverage percentages
+- 프로젝트 빌드 또는 자산 생성
+- 린터 실행 및 문제 해결
+- 명명 규칙과 기타 패턴
+- 작성하고 통과해야 하는 단위 테스트, 엔드투엔드 테스트 또는 기타 테스트
+  - 관련하여 요구되는 커버리지 비율이 있을 수 있음
 
-Look through all guidance you find, and ensure any prerequisites have been satisfied.
+찾은 모든 지침을 살펴보고 선행 조건이 모두 충족되었는지 확인하세요.
 
-## Issue
+## 이슈
 
-Always start by looking to see if an issue exists that's related to the task at hand. This may have already been created by the user, or someone else. If you discover one, prompt the user to ensure they want to use that issue, or which one they may wish to use.
+항상 먼저 현재 작업과 관련된 이슈가 이미 있는지 확인하세요. 사용자나 다른 사람이 이미 만들어 두었을 수 있습니다. 이슈를 발견하면 사용자에게 그 이슈를 사용할지, 또는 어떤 이슈를 사용하고 싶은지 물어보세요.
 
-If no issue is discovered, look through the guidance to see if creating an issue is a requirement. If it is, use the template provided in the repository. If there are multiple, choose the one that most aligns with the work being done. If there are any questions, ask the user which one to use.
+이슈가 없다면, 지침에서 이슈 생성이 필수인지 확인하세요. 필수라면 리포지토리가 제공하는 템플릿을 사용하세요. 템플릿이 여러 개라면 작업 내용과 가장 잘 맞는 것을 선택하세요. 의문이 있으면 사용자에게 어떤 것을 사용할지 물어보세요.
 
-If the requirement is to file an issue, but no issue template is provided, use [this issue template](./assets/issue-template.md) as a guide on what to file.
+이슈 등록이 필수인데 이슈 템플릿이 없다면, [이 이슈 템플릿](./assets/issue-template.md)을 무엇을 등록할지에 대한 가이드로 사용하세요.
 
-## Branch
+## 브랜치
 
-Before performing any commits, ensure a branch has been created for the work. Follow whatever guidance is provided by the repository's documentation. If prefixes are defined, like `feature` or `chore`, or if the requirement is to use the username of the person making the PR, then use that. This branch must never be `main`, or the default branch, but should be a branch created specifically for the changes taking place. If no branch is already created, create a new one with a good name based on the changes being made and the guidance.
+커밋하기 전에 작업용 브랜치가 만들어져 있는지 확인하세요. 리포지토리 문서가 제공하는 지침을 따르세요. `feature`나 `chore` 같은 접두사가 정의되어 있거나, PR을 만드는 사람의 사용자 이름을 사용해야 한다면 그에 따르세요. 이 브랜치는 `main`이나 기본 브랜치여서는 안 되며, 진행 중인 변경을 위해 특별히 만든 브랜치여야 합니다. 브랜치가 아직 없다면 변경 내용과 지침에 맞는 적절한 이름으로 새로 만드세요.
 
-## Commits
+## 커밋
 
-When committing changes:
+변경 사항을 커밋할 때는 다음을 따르세요.
 
-1. Review all changes
-2. Logically group the changes together
-3. Create short commit messages for each group, following any guidance in the repository
-4. Commit the grouped code to the branch.
+1. 모든 변경 사항을 검토합니다
+2. 변경 사항을 논리적으로 묶습니다
+3. 리포지토리의 지침을 따라 각 묶음에 대한 짧은 커밋 메시지를 작성합니다
+4. 묶은 코드를 브랜치에 커밋합니다.
 
-## Merging
+## 머지
 
-**NEVER** merge to main unless explicitly instructed to do so by the user
+사용자가 명시적으로 지시하지 않는 한 main에 **절대** 머지하지 마세요
 
-## Pull request
+## 풀 리퀘스트
 
-When creating a pull request, use existing templates in the repository if any exist, following the guidance you discovered.
+풀 리퀘스트를 만들 때는, 리포지토리에 기존 템플릿이 있다면 그것을 사용하고 찾은 지침을 따르세요.
 
-If no template is provided, use the [this PR template](./assets/pr-template.md). It contains a collection of headers to use, each with guidance of what to place in the particular sections.
+템플릿이 없다면 [이 PR 템플릿](./assets/pr-template.md)을 사용하세요. 이 템플릿에는 사용할 헤더 모음과, 각 섹션에 무엇을 넣어야 하는지에 대한 안내가 들어 있습니다.
 
-If an issue was created or is being used, ensure that issue is referenced in the PR. Use the `Closes #NUMBER` syntax to enable auto-closing of the issue.
+이슈를 만들었거나 사용 중이라면 PR에서 해당 이슈를 참조하세요. 이슈가 자동으로 닫히도록 `Closes #NUMBER` 구문을 사용하세요.
