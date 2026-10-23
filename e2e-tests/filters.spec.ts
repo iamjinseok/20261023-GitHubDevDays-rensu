@@ -1,5 +1,6 @@
 import { test, expect, type Page } from '@playwright/test';
 
+/** Locates the game cards that are currently visible (not hidden by a filter). */
 const visibleCards = (page: Page) => page.locator('[data-testid="game-card"]:visible');
 
 test.describe('Game filtering', () => {

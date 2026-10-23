@@ -2,6 +2,14 @@ import { describe, it, expect } from 'vitest';
 import type { Game } from '../types/game';
 import { filterGames, matchesFilters } from './filters';
 
+/**
+ * Builds a game fixture with only the fields filtering depends on.
+ *
+ * @param id - Game id (also used for the title).
+ * @param categoryId - Category id, or `null` for an uncategorized game.
+ * @param publisherId - Publisher id, or `null` for a game without a publisher.
+ * @returns A `Game` fixture.
+ */
 function makeGame(id: number, categoryId: number | null, publisherId: number | null): Game {
     return {
         id,
@@ -21,6 +29,7 @@ const catalog: Game[] = [
     makeGame(5, null, null),
 ];
 
+/** Extracts the ids of the given games, for compact assertions. */
 const ids = (games: Game[]): number[] => games.map((g) => g.id);
 
 describe('matchesFilters', () => {
