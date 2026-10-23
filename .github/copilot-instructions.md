@@ -97,6 +97,9 @@
 - `src/pages/`: Astro 페이지 라우트(`index.astro` 목록, `game/[id].astro`, `404.astro`, `about.astro`)
 - `src/styles/`: CSS 및 Tailwind 구성
 - `src/types/`: TypeScript 인터페이스(Game, Publisher, Category)
-- `e2e-tests/`: Playwright E2E 테스트(홈, 게임, 접근성)
+- `e2e-tests/`: Playwright E2E 테스트(홈, 게임, 필터, 접근성)
+- `.github/instructions/`: 파일 유형별 Copilot 지침
+- `.github/skills/`: 에이전트 스킬(`quality-checks`, `make-contribution`)
+- `.github/agents/`: 사용자 지정 에이전트 프로필(`qa.agent.md`)
 - `drizzle.config.ts`, `vitest.config.ts`, `astro.config.mjs`, `playwright.config.ts`: 도구 구성
 - `README.md`: 프로젝트 문서
